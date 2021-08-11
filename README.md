@@ -5,8 +5,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Run Locally
 
 ```
-# TODO: doc git clone
+git clone https://github.com/JustDaile/Questionnaire-ReactJS
 cd questionnaire-react
+npm run start
 ```
 
 ## Available Scripts
