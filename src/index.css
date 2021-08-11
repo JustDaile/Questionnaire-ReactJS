@@ -1,13 +1,98 @@
 body {
+  background-color: rgb(235, 235, 235);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgb(0 0 0 / 30%);
+  border-radius: 0.25rem;
+}
+
+/* #root {
+  --primary: #fdfcfc;
+  --secondary: #0081a7;
+  --danger: #f07167;
+
+  --color-transition: background-color 1s ease-in-out, color 1s ease-in-out,
+    border-color 1s ease-in-out;
+
+  transition: var(--color-transition); */
+
+/* page color */
+/* background-color: var(--primary-1);
+} */
+/* 
+#root.dark {
+} */
+/* 
+body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+} */
+
+/* header {
+  padding: 1em;
 }
+
+header::after {
+  clear: both;
+}
+
+header > h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+} */
+/* 
+nav {
+  float: right;
+}
+
+nav * {
+  margin-right: 1em;
+  display: inline-block;
+  padding: 1em;
+  cursor: pointer;
+  border-radius: 1em;
+  color: var(--nav-color, black);
+  transition: all 0.5s linear;
+} */
+
+/* nav *:hover {
+  background-color: var(--nav-background-color-hover, #000000ff);
+  color: var(--nav-color-hover, white);
+}
+
+nav *.active {
+  background-color: rgb(92, 92, 92);
+}
+
+#questionnaire_select {
+  margin: 1em;
+} */
+
+/* .undecorated {
+  text-decoration: none;
+} */
+/* 
+.pointer {
+  cursor: pointer;
+} */
+
+/* .theme-toggle {
+  float: right;
+} */
