@@ -120,6 +120,18 @@ class Main extends React.Component {
     this.download = this.download.bind(this);
     this.toggleComplete = this.toggleComplete.bind(this);
     this.delete = this.delete.bind(this);
+
+    if (getQuestionnaireIds().length < 1) {
+      this.addExample();
+    }
+  }
+  async addExample() {
+    const id = cuid();
+    saveQuestionnaire(cuid(), ExampleQuestionnaire);
+    await this.setState({
+      id: id,
+      questionnaire: ExampleQuestionnaire,
+    });
   }
   async onQuestionnaireChange(mutation) {
     console.log(
@@ -193,12 +205,7 @@ class Main extends React.Component {
 
     let cache = getQuestionnaireIds();
     if (cache.length === 0) {
-      const id = cuid();
-      saveQuestionnaire(cuid(), ExampleQuestionnaire);
-      return await this.setState({
-        id: id,
-        questionnaire: ExampleQuestionnaire,
-      });
+      return await this.addExample();
     }
     await this.setState({
       id: cache[0],
