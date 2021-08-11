@@ -160,7 +160,7 @@ class QuestionDesigner extends QuestionRenderer {
     return (
       <Form.Group as={Row}>
         <Col md="11">
-          <FloatingLabel controlId={id} label="Question Title">
+          <FloatingLabel label="Question Title">
             <Form.Control
               className={"questionTitle"}
               id={id}
@@ -189,7 +189,7 @@ class QuestionDesigner extends QuestionRenderer {
     const id = `question_${this.props.index}_details`;
     const placeholder = "question details here..";
     return (
-      <FloatingLabel controlId={id} label="Question Details">
+      <FloatingLabel label="Question Details">
         <Form.Control
           as="textarea"
           id={id}
@@ -227,7 +227,7 @@ class QuestionDesigner extends QuestionRenderer {
       <>
         <Form.Group id={"optionTypeSelector"} as={Row} className="mb-4">
           <Col md="12">
-            <FloatingLabel controlId={selectorId} label="Option Type">
+            <FloatingLabel label="Option Type">
               <Form.Select
                 aria-label="Questionnaire type selector"
                 size="sm"

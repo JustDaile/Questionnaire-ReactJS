@@ -72,7 +72,7 @@ class QuestionnaireDesigner extends QuestionnaireRenderer {
       ? this.props.titlePlaceholder
       : "Enter a title";
     return (
-      <FloatingLabel controlId={"title-input"} label="Questionnaire Title">
+      <FloatingLabel label="Questionnaire Title">
         <Form.Control
           id={"title-input"}
           className={"editable-text text-center my-5"}

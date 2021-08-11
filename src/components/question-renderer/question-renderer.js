@@ -124,7 +124,7 @@ class QuestionRenderer extends React.Component {
       >
         <Card className={"question-card mb-3"}>
           <Card.Header>{this.renderHeader()}</Card.Header>
-          <Card.Text className={"question-details p-3 mb-0"}>
+          <Card.Text className={"question-details p-3 mb-0"} as="div">
             {this.renderDetails()}
           </Card.Text>
           <Card.Footer>{this.renderOptionsContainer()}</Card.Footer>
